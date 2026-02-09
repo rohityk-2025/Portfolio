@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import ProjectDetails from "./pages/ProjectDetails";
 import Contact from "./pages/Contact";
 
 import "./styles/global.css";
