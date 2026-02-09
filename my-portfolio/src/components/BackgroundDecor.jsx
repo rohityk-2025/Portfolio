@@ -1,5 +1,5 @@
 import React from "react";
-import "./backgroundDecor.css";
+import "./BackgroundDecor.css";
 
 const shapes = ["⭐", "✦", "✧", "●", "✷", "✺", "〰️"];
 
