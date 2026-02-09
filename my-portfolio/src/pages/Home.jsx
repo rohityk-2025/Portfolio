@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 // import {useState} from "react";
-import "./home.css";
+import "./Home.css";
 import profile from "../assets/image.png";
 import newprofile from "../assets/newprofile1.jpeg";
 import { useNavigate } from "react-router-dom";
