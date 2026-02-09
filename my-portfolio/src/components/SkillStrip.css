@@ -1,0 +1,85 @@
+/* Section */
+.skill-strip-section {
+  width: 100%;
+  overflow: hidden;
+
+  background: #464646;
+
+  padding: 10px 0;
+}
+
+/* Track */
+.skill-strip-track {
+  display: flex;
+  width: fit-content;
+
+  animation: scrollStrip 25s linear infinite;
+}
+
+/* Strip */
+.skill-strip {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  padding-right: 40px;
+}
+
+/* Items */
+.skill-strip span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #fff;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* Icons */
+.skill-strip span svg {
+  font-size: 25px;
+  stroke-width: 1.5;
+  margin-left: 50px;
+  opacity: 50%;
+}
+
+/* Stars */
+.skill-strip i {
+  color: #fff;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+
+  opacity: 0.8;
+}
+
+/* Animation */
+@keyframes scrollStrip {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .skill-strip span {
+    font-size: 15px;
+  }
+
+  .skill-strip span svg {
+    font-size: 18px;
+  }
+
+  .skill-strip i {
+    font-size: 16px;
+  }
+}

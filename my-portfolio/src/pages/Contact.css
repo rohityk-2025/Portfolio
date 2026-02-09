@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+.contact-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 20px;
+  background: #fff;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+/* Title */
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.contact-title span {
+  color: #aaa;
+}
+
+.contact-sub {
+  margin: 20px 0 60px;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Form */
+
+.contact-form {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Row */
+
+.form-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  flex: 1;
+  text-align: left;
+}
+
+/* Inputs */
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+.form-group input:focus {
+  border-color: #000;
+}
+
+.form-group.full {
+  margin-bottom: 40px;
+}
+
+/* Tags */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.tags span {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tags span:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Button */
+
+.send-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Note */
+
+.note {
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-title {
+    font-size: 34px;
+  }
+}

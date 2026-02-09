@@ -1,0 +1,212 @@
+/* Section */
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Container */
+.about-container {
+  position: relative;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.4s ease-out;
+}
+
+/* Intro */
+.about-intro {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.about-title {
+  font-size: clamp(70px, 11vw, 150px);
+  font-weight: 800;
+  color: #000;
+  line-height: 1;
+}
+
+/* Outline */
+.about-outline {
+  font-size: clamp(70px, 11vw, 150px);
+  font-weight: 800;
+
+  color: transparent;
+  -webkit-text-stroke: 2px #000;
+
+  line-height: 1;
+}
+
+/* Location */
+.about-location {
+  position: absolute;
+  left: 80px;
+  top: 52%;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  color: #444;
+}
+
+/* Image Box */
+.about-image-box {
+  position: absolute;
+
+  bottom: -40px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 420px;
+  max-width: 80%;
+
+  z-index: 2;
+  transition: transform 0.15s ease-out;
+
+}
+
+/* Image */
+.about-image-box img {
+  width: 100%;
+  height: auto;
+
+  filter: grayscale(100%);
+  object-fit: cover;
+
+  /* Bottom Fade */
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  
+}
+
+/* Button Box */
+.about-btn-box {
+  position: absolute;
+
+  bottom: 20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 5;
+}
+
+/* Button */
+.about-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 36px;
+
+  background: black;
+  color: white;
+
+  border: none;
+  border-radius: 40px;
+
+  font-size: 16px;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.about-btn span {
+  font-size: 22px;
+}
+
+/* Hover */
+.about-btn:hover {
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+}
+
+/* Scroll Controls */
+/* Scroll Arrows Wrapper */
+.about-scroll {
+  position: fixed;
+  right: 25px;
+  top: 0;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 25px 0;
+
+  z-index: 100;
+}
+
+/* Arrow Buttons */
+.scroll-btn {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: white;
+  border: 2px solid #000;
+
+  color: #000;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  transition: all 0.25s ease;
+}
+
+/* Active (Bold Dark) */
+.scroll-btn.active {
+  background: black;
+  color: white;
+}
+
+/* Hover */
+.scroll-btn:hover {
+  background: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-location {
+    left: 20px;
+    font-size: 12px;
+  }
+
+  .about-image-box {
+    width: 280px;
+    bottom: -20px;
+  }
+
+  .about-btn-box {
+    bottom: 100px;
+  }
+
+  .about-scroll {
+    right: 15px;
+  }
+}

@@ -1,0 +1,119 @@
+/* Section */
+.skills-section {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #fff;
+
+  padding: 70px 60px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Header */
+.skills-header {
+  font-family: "Manrope", sans-serif;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Title */
+.skills-header span {
+  font-size: 50px;
+  font-weight: 700;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  letter-spacing: 2px;
+  color: #000;
+}
+
+/* Line */
+.skills-line {
+  flex: 1;
+  height: 2px;
+  background: #000;
+}
+
+/* Rows Container */
+.skills-rows {
+  font-family: "Manrope", sans-serif;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* One Row */
+.skills-row {
+  display: flex;
+  align-items: center;
+
+  gap: 35px;
+}
+
+/* Skill */
+.skills-row span {
+  font-family: "Barlow", sans-serif;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #535353;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+/* Star */
+.skills-row i {
+  margin-left: auto;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+
+  color: #000000;
+}
+
+/* Hover */
+.skills-row span:hover {
+  transform: scale(2);
+
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Manrope", sans-serif;
+
+  letter-spacing: 1px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .skills-row {
+    gap: 25px;
+  }
+
+  .skills-row span {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .skills-section {
+    padding: 50px 20px;
+  }
+
+  .skills-row {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .skills-row i {
+    display: none;
+  }
+}

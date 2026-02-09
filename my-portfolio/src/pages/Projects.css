@@ -1,0 +1,250 @@
+/* ================= PROJECT PAGE (MINIMAL) ================= */
+
+.project-section {
+  max-width: 1200px;
+  margin: 140px auto;
+  padding: 0 20px;
+
+  font-family: "Zalando Sans Expanded", sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* ================= HEADER ================= */
+
+.project-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.project-title {
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 52px;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-icon {
+  height: 50px;
+  width: auto;
+}
+
+.project-sub {
+  font-family: "SN Pro", sans-serif;
+  color: #777;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* ================= LAYOUT ================= */
+
+.project-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  align-items: center;
+}
+
+/* ================= LEFT ================= */
+
+.project-left {
+  height: 380px;
+  width: 100%;
+
+  background: #f4f4f4;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  padding: 10px 10px 35px;
+
+  background: #3e3e3e;
+
+  transition: 0.4s ease;
+}
+
+.project-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 20px 20px 0 #000;
+}
+
+/* ================= RIGHT ================= */
+
+.project-right {
+  max-width: 520px;
+}
+
+/* Title */
+
+.project-name {
+  font-size: 32px;
+  font-weight: 500;
+  color: #292929;
+
+  margin-bottom: 12px;
+}
+
+/* Description */
+
+.project-desc {
+  font-family: "SN Pro", sans-serif;
+
+  font-size: 15px;
+  color: #666;
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+
+/* ================= LIST ================= */
+
+.project-list {
+  font-family: "SN Pro", sans-serif;
+
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Item */
+
+.project-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  color: #888;
+
+  cursor: pointer;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #ddd;
+
+  transition: 0.25s ease;
+}
+
+/* Hover */
+
+.project-list li:hover {
+  color: #000;
+}
+
+/* Active */
+
+.project-list li.active {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ================= ACTIONS ================= */
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Button */
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding: 10px 26px;
+
+  border: 2px solid #000;
+  border-radius: 30px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #000;
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.project-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* GitHub Icon */
+
+.project-github {
+  width: 42px;
+  height: 42px;
+
+  border: 2px solid #000;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  color: #000;
+
+  transition: 0.25s ease;
+}
+
+.project-github:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+  .project-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .project-left {
+    height: 260px;
+  }
+
+  .project-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .project-actions {
+    justify-content: center;
+  }
+
+  .project-list li {
+    justify-content: center;
+  }
+}

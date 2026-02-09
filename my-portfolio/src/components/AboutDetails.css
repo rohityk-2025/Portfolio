@@ -1,0 +1,193 @@
+/* Section */
+.about-details-section {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top Border Line */
+.about-top-line {
+  margin-top: 30px;
+  width: 80%;
+  height: 2px;
+  background: #363636;
+  margin-bottom: 80px;
+}
+
+/* Layout */
+.about-details-container {
+  width: 90%;
+  max-width: 1300px;
+
+  display: grid;
+  grid-template-columns: 140px 1fr 260px;
+
+  gap: 50px;
+
+  align-items: center;
+}
+
+/* Vertical Section */
+.about-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* ABOUT ME */
+.about-text {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+  color: #000;
+}
+
+/* Arrow Under A */
+.about-arrow {
+  margin-top: 25px;
+
+  font-size: 42px;
+  font-weight: bold;
+}
+
+/* Description */
+.about-desc {
+  font-family: "Open Sans", sans-serif;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  font-size: 17px;
+  line-height: 1.5;
+
+  color: #333;
+}
+
+/* Profile */
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Circle Image */
+.about-circle {
+  width: 170px;
+  height: 170px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  border: 2px solid #000;
+}
+
+/* Image */
+.about-circle img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+/* Social Icons */
+/* .about-socials {
+  margin-top: 18px;
+
+  display: flex;
+  gap: 18px;
+
+  animation: slideDown 0.8s ease forwards;
+} */
+
+.about-socials {
+  margin-top: 18px;
+
+  display: flex;
+  flex-direction: column;   /* <-- makes vertical */
+  gap: 14px;
+
+  animation: slideDown 0.8s ease forwards;
+}
+
+
+/* Icons */
+.about-socials a {
+  font-size: 26px;
+  color: #000;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.about-socials a:hover {
+  transform: translateY(-4px);
+  color: #555;
+}
+
+/* Vertical Line */
+.about-line {
+  width: 2px;
+  height: 50px;
+
+  background: #000;
+
+  margin-top: 25px;
+}
+
+/* Slide Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .about-details-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-vertical {
+    writing-mode: horizontal-tb;
+    transform: none;
+
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-text {
+    font-size: 42px;
+  }
+
+  .about-arrow {
+    margin-left: 15px;
+  }
+
+  .about-desc {
+    font-size: 16px;
+  }
+
+  .about-profile {
+    margin-top: 30px;
+  }
+}

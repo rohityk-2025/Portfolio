@@ -1,0 +1,1040 @@
+/* ================= GOOGLE FONTS ================= */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* ================= RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= PAGE ================= */
+
+.page-wrapper {
+  width: 100%;
+  padding: 30px;
+  overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+
+.home-hero {
+  max-width: 1200px;
+  margin: 80px auto 120px;
+
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  min-height: 85vh;
+}
+
+.home-left {
+  flex: 1;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 50px;
+}
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* ================= TITLE ================= */
+
+.home-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hello-text {
+  font-family: "Playwrite IT Moderna", cursive;
+  color: #444;
+}
+
+.name-text {
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 800;
+}
+
+/* ================= ROLE ================= */
+
+.role-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  height: 40px; /* FIX JUMP */
+  overflow: hidden;
+
+  margin-bottom: 25px;
+}
+
+.home-role {
+  font-family: "Bebas Neue", sans-serif;
+
+  font-size: 28px;
+  font-weight: 500;
+
+  min-width: 240px; /* FIX WIDTH JUMP */
+}
+
+.wand {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #292929;
+}
+
+/* ================= DESC ================= */
+
+.home-desc {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Public Sans", sans-serif;
+
+  font-size: 18px;
+  line-height: 1.6;
+
+  margin-bottom: 30px;
+}
+
+/* ================= BUTTONS ================= */
+
+.home-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.btn-main {
+  padding: 12px 28px;
+
+  background: black;
+  color: white;
+
+  border: none;
+  border-radius: 30px;
+
+  font-weight: 600;
+}
+
+.btn-outline {
+  background: none;
+  border: none;
+
+  border-bottom: 2px solid black;
+
+  font-weight: 600;
+}
+
+/* ================= IMAGE ================= */
+
+.image-box {
+  width: 500px;
+  height: 500px;
+
+  /* border-radius: 50%; */
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  overflow: hidden;
+  background: #a6a6a6;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= STRIP ================= */
+
+.skill-strip-gsap {
+  background: black;
+  color: white;
+
+  padding: 18px 0;
+  margin-bottom: 120px;
+
+  overflow: hidden;
+}
+
+.strip-track-gsap {
+  display: flex;
+  width: max-content;
+}
+
+.strip-content-gsap {
+  display: flex;
+  gap: 25px;
+
+  white-space: nowrap;
+  font-size: 14px;
+
+  letter-spacing: 1px;
+}
+
+.stripfont {
+  font-family: "Ultra", serif;
+}
+
+/* ================= SERVICES ================= */
+
+.services-section {
+  max-width: 1200px;
+  margin: auto;
+
+  position: relative;
+}
+
+/* Scroll Indicator */
+
+.scroll-indicator {
+  position: absolute;
+
+  left: 10px;
+  top: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.scroll-indicator span {
+  writing-mode: vertical-rl;
+  font-size: 12px;
+
+  letter-spacing: 2px;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 70px;
+
+  background: black;
+}
+
+.scroll-circle {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+  border: 2px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  animation: bounce 1.3s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+}
+
+/* ================= HEADER ================= */
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 60px;
+  padding-left: 80px;
+}
+
+.small-title {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.services-header h2 {
+  font-size: 42px;
+  line-height: 1.1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.all-service-btn {
+  background: black;
+  color: white;
+
+  border: none;
+  border-radius: 25px;
+
+  padding: 12px 22px;
+
+  font-weight: 600;
+}
+
+/* ================= GRID ================= */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  padding-left: 80px;
+}
+
+/* ================= CARD ================= */
+
+.service-card {
+  background: white;
+
+  border: 2px solid black;
+
+  padding: 30px 25px;
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 0.3s ease;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.service-card:hover {
+  background: black;
+  color: white;
+
+  transform: translateY(-5px);
+}
+
+.service-card:hover .service-icon,
+.service-card:hover .service-btn {
+  color: white;
+}
+
+/* Icon */
+
+.service-icon {
+  font-size: 34px;
+  color: black;
+}
+
+/* Button */
+
+.service-btn {
+  background: none;
+  border: none;
+
+  color: black;
+
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-btn span {
+  font-size: 22px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+  .home-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+
+  .services-header {
+    padding-left: 0;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+/* ================= VALUE POINTS ================= */
+
+.home-points {
+  list-style: none; /* 🔴 Removes bullet points */
+  padding-left: 0; /* 🔴 Removes left spacing */
+  margin: 25px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  max-width: 480px;
+}
+
+.home-points li {
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Zalando Sans Expanded", sans-serif;
+  margin-left: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #333;
+}
+
+.check-icon {
+  font-size: 20px;
+  color: #000;
+  flex-shrink: 0;
+}
+
+.home-points li:hover {
+  transform: translateX(4px);
+  transition: 0.2s ease;
+  font-weight: 800;
+  color: black;
+}
+
+.cr {
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #292929;
+  font-size: 30px;
+}
+
+/* ================= CASE STUDY UI ================= */
+
+.case-section {
+  max-width: 1200px;
+  margin: 140px auto;
+  padding: 0 20px;
+
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+/* Header */
+
+.case-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.case-title {
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 52px;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.case-title-icon {
+  font-size: 40px;
+}
+
+.case-sub {
+  font-family: "SN Pro", sans-serif;
+  color: #777;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Layout */
+
+.case-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  align-items: center;
+}
+
+/* ================= LEFT ================= */
+
+.case-left {
+  height: 380px;
+  width: 100%;
+
+  background: #f4f4f4;
+  border-radius: 0;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-image {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  object-fit: cover;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 35px;
+  background: #3e3e3e;
+
+  transition: 0.4s ease;
+}
+.case-image:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 20px 20px 0 #000;
+}
+
+/* ================= RIGHT ================= */
+
+.case-right {
+  max-width: 520px;
+}
+
+/* Title */
+
+.case-project {
+  font-size: 32px;
+  font-weight: 500;
+  color: #292929;
+  margin-bottom: 12px;
+}
+
+/* Desc */
+
+.case-desc {
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "SN Pro", sans-serif;
+
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+}
+
+/* Button */
+
+.case-btn {
+  display: inline-block;
+  width: 50%;
+
+  padding: 10px 26px;
+
+  border: 2px solid black;
+  border-radius: 30px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: black;
+  text-decoration: none;
+
+  transition: 0.25s ease;
+  display: flex;
+  justify-content: space-between;
+
+  /* border-bottom: 2px solid black; */
+}
+
+.case-btn:hover {
+  background: black;
+  color: white;
+}
+
+/* ================= LIST ================= */
+
+.case-list {
+  /* font-family: "Courier New", Courier, monospace; */
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "SN Pro", sans-serif;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Item */
+
+.case-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  color: #888;
+
+  cursor: pointer;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #ddd;
+
+  transition: all 0.25s ease;
+}
+
+/* Arrow Circle */
+
+.case-list li::before {
+  /* content: "←"; */
+
+  width: 26px;
+  height: 26px;
+
+  border: 2px solid #aaa;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  color: #777;
+
+  flex-shrink: 0;
+
+  transition: 0.25s ease;
+}
+
+/* Icon */
+
+.case-icon {
+  font-size: 20px;
+}
+
+/* Hover */
+
+.case-list li:hover {
+  color: black;
+}
+
+/* Active */
+
+.case-list li.active {
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.case-list li.active::before {
+  border-color: black;
+  color: black;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+  .case-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .case-left {
+    height: 260px;
+  }
+
+  .case-right {
+    max-width: 100%;
+  }
+}
+
+.csi {
+  height: 50px;
+  width: auto;
+}
+
+/* =====quote section  */
+
+.bw-quote-section {
+  /* width: 100%;
+  padding: 100px 20px; */
+  padding: 50px 20px; /* Reduced padding */
+  min-height: auto;
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+/* Main Container */
+.quote-container {
+  max-width: 900px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+}
+
+/* Quote Card */
+.quote-card {
+  position: relative;
+  padding: 40px 30px;
+  border: 2px solid #000;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 6px 6px 0 #000;
+}
+
+/* Quote Icon */
+.quote-mark {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* Quote Text ---------------------------*/
+.quote-text {
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  /* font-family: "SN Pro", sans-serif; */
+  font-family: "Funnel Display", sans-serif;
+  font-size: 28px;
+  line-height: 1.5;
+  margin: 20px 0 25px;
+}
+
+/* Highlight */
+
+.bold-text {
+  font-weight: 800;
+  font-size: 24px;
+  color: blue;
+}
+
+/* Author */
+.author-name {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-top: 3px solid #000;
+  padding-top: 8px;
+  display: inline-block;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .quote-text {
+    font-size: 18px;
+  }
+
+  .quote-text strong,
+  .bold-text {
+    font-size: 30px;
+    color: #292929;
+  }
+}
+
+.txt {
+  font-size: 30px;
+  color: #232323;
+}
+
+.profile-intro {
+  width: 100%;
+  padding: 100px 20px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+/* Horizontal Lines */
+.profile-intro .line {
+  position: absolute;
+  top: 150px;
+  width: 30%;
+  height: 2px;
+  background: #000;
+  opacity: 0.2;
+}
+
+.profile-intro .line.left {
+  left: 0;
+}
+
+.profile-intro .line.right {
+  right: 0;
+}
+
+/* Profile Container */
+.profile-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 25px;
+}
+
+/* Circular Text */
+.circle-text {
+  position: absolute;
+  inset: 0;
+  animation: rotateText 12s linear infinite;
+}
+
+.circle-text svg {
+  width: 100%;
+  height: 100%;
+}
+
+.circle-text text {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  fill: #000;
+  font-weight: 600;
+}
+
+/* Profile Image */
+.profile-image {
+  position: absolute;
+  inset: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #000;
+  background: #fff;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Name------------------------------------ */
+.profile-name {
+  font-family: "Funnel Display", sans-serif;
+
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Tagline */
+.profile-tagline {
+  /* font-family: "Google Sans", sans-serif; */
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #444;
+  letter-spacing: 0.5px;
+}
+
+/* Animation */
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .profile-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+
+  .profile-name {
+    font-size: 22px;
+  }
+
+  .profile-tagline {
+    font-size: 14px;
+  }
+
+  .profile-intro .line {
+    width: 20%;
+  }
+}
+
+.line {
+  border-bottom: 2px solid black;
+}
+
+.contact-section {
+  width: 100%;
+  padding: 100px 20px;
+  background: #fff;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+/* Title */
+
+.contact-title {
+  /* font-family: "Bricolage Grotesque", sans-serif; */
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.contact-title span {
+  color: #aaa;
+}
+
+.contact-sub {
+  margin: 20px 0 60px;
+  color: #555;
+}
+
+/* Form */
+
+.contact-form {
+  max-width: 900px;
+  margin: auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  flex: 1;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #000;
+}
+
+.form-group.full {
+  margin-bottom: 40px;
+}
+
+/* Tags */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.tags span {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tags span:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Button */
+
+.send-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Note */
+
+.note {
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+}

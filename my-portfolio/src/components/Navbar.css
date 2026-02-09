@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px 8%;
+  font-family: "Inter", sans-serif;
+  background: white;
+}
+
+/* LOGO */
+
+.logo a {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+/* MENU */
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.linker {
+  font-family: "Funnel Display", sans-serif;
+  border-top: 1.5px solid black;
+  font-weight: 400;
+  font-size: large;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-item p {
+  font-size: 11px;
+  color: #777;
+}
+
+/* LINE */
+
+/* .nav-line {
+  width: 100px;
+  height: 1px;
+  background: black;
+  margin-bottom: 4px;
+} */
+
+.arrow {
+  height: 20px;
+  width: auto;
+  margin-left: 50px;
+}
+
+/* .logo-box {
+  position: relative;
+  display: flex;
+  gap: 2px;
+}
+
+.logos {
+  width: 26px;
+} */
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.logos {
+  width: 50px;
+  display: block;
+}
+
+.logoname {
+  font-family: "Funnel Display", sans-serif;
+  font-size: 50px;
+}
