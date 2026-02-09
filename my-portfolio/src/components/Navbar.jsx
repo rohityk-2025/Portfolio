@@ -6,7 +6,7 @@ import Arrow from "../assets/right-up.png";
 import R from "../assets/letter-r.png";
 import K from "../assets/letter-k.png";
 
-import "./navbar.css";
+import "./Navbar.css";
 
 function Navbar() {
   const rRef = useRef(null);
